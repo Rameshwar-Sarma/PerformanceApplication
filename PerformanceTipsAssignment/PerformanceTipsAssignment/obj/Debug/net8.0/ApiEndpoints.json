@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "UnifiedPerformanceApplication.Controllers.ProductsController",
+    "Method": "GetProducts",
+    "RelativePath": "Products/GetProducts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

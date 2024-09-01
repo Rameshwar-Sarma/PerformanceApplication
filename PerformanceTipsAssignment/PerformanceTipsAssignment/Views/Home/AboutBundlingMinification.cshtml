@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "About Bundling and Minification";
+}
+
+<div class="about-container">
+    <h1>@ViewData["Title"]</h1>
+
+    <p>Minification and bundling are essential concepts in ASP.NET MVC for optimizing the performance of web applications.</p>
+
+    <h2>Bundling</h2>
+    <p>Bundling allows you to combine multiple JavaScript and CSS files into a single file. This reduces the number of HTTP requests made by the browser, which can significantly improve the load time of your web application.</p>
+
+    <div class="code-block">
+        <strong>Example:</strong>
+        <p>In <code>bundleconfig.json</code>, you might see something like this:</p>
+        <pre>
+            {
+                "outputFileName": "wwwroot/css/site.min.css",
+                "inputFiles": [
+                    "wwwroot/css/site.css",
+                    "wwwroot/css/about.css"
+                ]
+            }
+        </pre>
+    </div>
+
+    <h2>Minification</h2>
+    <p>Minification removes unnecessary characters from your CSS and JavaScript files without changing their functionality. This can drastically reduce the size of these files, which again improves load times.</p>
+
+    <div class="code-block">
+        <strong>Example:</strong>
+        <p>A minified version of a JavaScript file might look like this:</p>
+        <pre>
+            function showBundlingMessage(){alert("Minified JS example!")}
+        </pre>
+    </div>
+
+    <p>Together, bundling and minification help to optimize the delivery of your web assets, ensuring a faster, more efficient user experience.</p>
+
+    <button class="example-button">See Bundling in Action</button>
+</div>
